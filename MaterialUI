@@ -1,0 +1,14 @@
+Material UI is an opensource react component library
+Mobile first component library
+advantages: 1) We can focus more on logic ratherbstyle bcoz it is beautifull by default
+            he library includes an extensive set of intuitive customizability features.
+<Button variant="outlined">Hello world</Button>  or variant="contained"/"text"
+text-BUTTONS==>1)primary,disabled,href
+            <Button>Primary</Button>
+            <Button disabled>Disabled</Button>
+            <Button href="#text-buttons">Link</Button>
+contained-BUTTONS=> ex:-  <Button variant="contained" disabled>Disabled</Button>
+outlined BUTTONS=>       ex:-  <Button variant="outlined">Primary</Button>
+
+DEFAULT COLORS:==>1)success(green color)2)secondary(violet) 3)error      ==>ex:   <Button variant="contained" color="success">Success</Button>
+CUSTOM COLORS:
