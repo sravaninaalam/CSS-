@@ -1,0 +1,18 @@
+Use Tailwind's @apply directive to extract repeated utility patterns into custom CSS classes just by copying and pasting the list of class names.
+
+Uses:  1)You aren’t wasting energy inventing class names.    2)Your CSS stops growing(No need to write big big css files).   3)Making changes feels safer:If we want to change anything we know
+   exactly what to change where to change without messing up everything like in tradational css
+
+Why not just use inline styles?
+
+   A common reaction to this approach is wondering, “isn’t this just inline styles?” and in some ways it is — you’re applying styles directly to elements instead of 
+assigning them a class name and then styling that class.
+
+But using utility classes has a few important advantages over inline styles:
+
+    1)Responsive design. You can’t use media queries in inline styles, but you can use Tailwind’s responsive utilities to build fully responsive interfaces easily.
+     2)Hover, focus, and other states. Inline styles can’t target states like hover or focus, but Tailwind’s state variants make it easy to style those states with utility classes.
+
+===>className='invalid:border-pink-500 invalid:text-pink-600 focus:invalid:border-pink-500 focus:invalid:ring-pink-500'
+
+==>When you need to style an element based on the state of some parent element, mark the parent with the group class, and use group-* modifiers like group-hover to style the target element:
