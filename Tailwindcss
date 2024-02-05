@@ -17,3 +17,6 @@ But using utility classes has a few important advantages over inline styles:
 
 ==>When you need to style an element based on the state of some parent element, mark the parent with the group class, and use group-* modifiers like group-hover to style the target element:
 
+
+Use unprefixed utilities to target mobile, and override them at larger breakpoints
+we can customize breakpoints in  tailwind.config.js file:
