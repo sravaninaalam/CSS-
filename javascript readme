@@ -1,11 +1,11 @@
 1)What is the diff b/w map and forEach?
     ans)->both are array functions  to loop through the  array items
-    1)map in result rens a new array but for Each doesn't rtrn any thing inturn  modifies the original array
+    1)map in result rens a new array but for Each doesn't return anything in turn  modifies the original array
     2)we can chain things on map like(map()=>{}.filter())...
-     but as forEach doesn't rtrn any thing we can't  chain other methods
+     but as forEach doesn't return any thing we can't  chain other methods
 
 2)Diff b/w null and undefined?
-    null is the actual value but undefined is variable is declared but not intialized
+    null is the actual value but undefined is the variable which is declared but not initialized
 
     type of null-object typeof undefined -undefined
     console.log(null==undefined)  ===>true
@@ -17,4 +17,10 @@ console.log(null===undefined)    ===>false
 4)Var , let , const diff
  ans)=>1)scope   var(function scope or global) let,const(block)
        2)declaration  var can be re declared but let and consts are not
+
+
+5)What is a pipe JavaScript?
+
+   A pipe is a function that allows us to pass the output of a function as the input of another. (left=>right)
+
        
