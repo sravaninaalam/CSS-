@@ -23,4 +23,6 @@ console.log(null===undefined)    ===>false
 
    A pipe is a function that allows us to pass the output of a function as the input of another. (left=>right)
 
+6)Closures==> functions with their outer most environment bundled together
+   uses;)1=>modle pattern;function currying ; used in functions like memoize() and once() ; data hiding and encaptulation 
        
