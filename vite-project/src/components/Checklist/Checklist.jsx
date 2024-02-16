@@ -1,7 +1,7 @@
 import { useState } from "react"
 
 const todo=['play music','watch tv','Go shopping']
-const ProblemList = () => {
+const Checklist = () => {
   const [todos,setTodos]=useState(todo)
   const[enable,setEnable]=useState()
   const[clicked,setClicked]=useState('')
@@ -31,4 +31,4 @@ const ProblemList = () => {
   )
 }
 
-export default ProblemList
+export default Checklist

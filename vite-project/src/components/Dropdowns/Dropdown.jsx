@@ -1,11 +1,12 @@
 import { useState } from "react"
+import Checklist from "../Checklist/Checklist"
 
-countries=[
+const countries=[
     {name:'India',val:'IN',city:['Delhi','kerala','kashimr','hyderabad']},{name:'America',val:'US',city:['canada','florida']},
     {name:'London',val:'US',city:['londonbridge','londoneye']}]
 
 
-function Problem(){
+function Dropdown(){
   const[cn,setCn]=useState(0)
 
     return(
@@ -24,7 +25,8 @@ function Problem(){
                  }
                  </select>
             </div>
+            <Checklist/>
         </>
     )
 }
-export default Problem
+export default Dropdown
