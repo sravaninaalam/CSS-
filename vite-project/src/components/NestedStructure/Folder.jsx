@@ -25,8 +25,7 @@
 import React, { useState } from 'react'
 
 const JsonFolder=({name,files})=>{
-  // console.log(name,"name")
-  console.log(files,"items")
+
   const[expand,setExpand]=useState(false)
   return(
     <div className='px-3 m-1'>
