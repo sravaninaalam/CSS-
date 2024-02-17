@@ -90,3 +90,39 @@ export const comments_data=[
     data:'Your order has been deliverd'
   }
   ]
+
+  export const json_folder=
+    {
+        name:"root",
+        isFolder:true,
+        items:[
+            {
+            name:"public",
+            isFolder:true,
+            items:[{
+                name:"index.html",
+               isFolder:false,
+               }
+            ]
+        },
+        {
+            name:"src",
+            isFolder:true,
+            items:[{
+                name:"components",
+                isFolder:true,
+                items:[
+                    {
+                        name:'app.js',
+                        isFolder:false
+                    },{
+                      name:"index.js",
+                      isFolder:false
+                    }
+                ]
+            }]
+        },
+        {name:"package.json",
+        isFolder:false}
+        ]
+    }
