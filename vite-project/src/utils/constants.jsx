@@ -91,7 +91,7 @@ export const comments_data=[
   }
   ]
 
-  export const json_folder=
+  export const json_folder=[
     {
         name:"root",
         isFolder:true,
@@ -126,3 +126,4 @@ export const comments_data=[
         isFolder:false}
         ]
     }
+  ]
