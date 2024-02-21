@@ -19,4 +19,19 @@ But using utility classes has a few important advantages over inline styles:
 
 
 Use unprefixed utilities to target mobile, and override them at larger breakpoints
-we can customize breakpoints in  tailwind.config.js file:
+we can customize breakpoints in  the tailwind.config.js file:
+
+
+
+====>Can write tailwind in a better way
+
+1=> w-24 h-24 : size-24
+2=> border-b-8 :divide-y-8 (add border b/w every single item)
+3=> space between elements without grid or flex=>space-y-8
+4=>if more text like paragraphs then we can use "line-clamp-3"  or "truncate"(single line)
+5=>Gradient
+      "h-48 bw-full bg-gradient-to-r  from-red-500 to-black via white from-20% via-70% to 90% "
+
+6=>ring=>allows u to use box shadows to add a different ring around ur element very similar to outline focus
+
+7=>sr-only: it hides the text normally it allows shows who are using screen readers
