@@ -105,3 +105,15 @@ Array.prototype.myPush=function(...elems){
         return this.length
 }
 console.log(ar.push(7,5,'pop',{a:"sr"}))
+
+//INFINITE CURRYING
+function add(a){
+    return function(b){
+        if(b){
+            return add(a+b)
+        }
+        else return a
+    }
+    // return(b)=>b?add(a+b):a
+}
+console.log(add(5)(7)(6)(4)())
