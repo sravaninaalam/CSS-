@@ -92,3 +92,16 @@ Array.prototype.myJoin=function(sep=','){
         return res
 }
 console.log(countries.myJoin(' | '))
+
+//POLYFILL PUSH
+const ar=[1,2,3,4]
+Array.prototype.myPush=function(...elems){
+    //    loop through elems and add at the end
+    // push return new length
+        for(ele of elems){
+            this[this.length]=ele
+            
+        }
+        return this.length
+}
+console.log(ar.push(7,5,'pop',{a:"sr"}))
