@@ -36,4 +36,29 @@ function counter(){
 
   var counter1=counter()
   counter1()
+
+POLYFILL FOR FLAT METHOD IN JAVASCRIPT
+
+//1ST WAY
+
+flatar=[1,2,4,6,3,[4,1,[5,10],[12,18]]]
+function myFlat(ar,depth=1){
+    // we need to loop through array elems if it is an array we will recursively 
+    // call the method ele push the result
+    const op=[]
+ ar.forEach((e)=>{
+      if(Array.isArray(e) && depth>0){
+        op.push(...myFlat(e,depth-1))
+      }
+    else{
+        op.push(e)
+    }
+  }  )
+  return op
+
+}
+
+console.log(myFlat(flatar,2))
+
+
        
