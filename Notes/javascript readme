@@ -77,4 +77,18 @@ Array.prototype.myPop=function(){
 arr.myPop()
 arr.myPop()
 // console.log(arr)  1,2,3,4
-       
+
+//POLYFILL JOIN
+const countries=["IN","PK","US","UK"]
+Array.prototype.myJoin=function(sep=','){
+        // if elem is not the last elem then add seperator
+        let res=''
+        for(let i=0;i<this.length;i++){
+            res+=this[i]
+            if(i!==this.length-1){
+                res+=sep
+            }
+        }
+        return res
+}
+console.log(countries.myJoin(' | '))
