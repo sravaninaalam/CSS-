@@ -139,3 +139,20 @@ function add(a){
     // return(b)=>b?add(a+b):a
 }
 console.log(add(5)(7)(6)(4)())
+
+//MAP.FILTER POLYFILL
+
+const arr=[1,5,8,4]
+//map returns new array
+Array.prototype.myFilter=function(hfn){
+    const res=[]
+    for(let i=0;i<this.length;i++){
+                            //MAP LOGIC
+                                res.push(hfn(this[i]))
+        if(hfn(this[i]))
+          res.push(this[i])
+    }
+        return res
+}
+const op=arr.myFilter((x)=>x>=5)
+console.log(op)
