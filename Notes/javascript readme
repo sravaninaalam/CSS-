@@ -156,3 +156,21 @@ Array.prototype.myPolyfill=function(hfn){
 }
 const op=arr.myPolyfill((x)=>x>=5)
 console.log(op)
+
+//REDUCE POLYFILL
+
+const arr=[1,2,3,4]
+Array.prototype.myReduce=function(cb,init){
+    // accept callback function and initial value as params
+    // if init value not provided take 1st elem of array as init value
+    let acc=init
+   
+    for(let i=0;i<this.length;i++){
+        // if acc is undefined take 1st value as acc
+        acc=acc?cb(acc,this[i]):this[i]
+
+    }
+    return acc
+}
+console.log(arr.myReduce((acc,curr)=>{return acc+=curr}
+))
