@@ -57,8 +57,30 @@ function myFlat(ar,depth=1){
   return op
 
 }
-
 console.log(myFlat(flatar,2))
+
+//2ND WAY:==>
+
+                                const ar=[1,2,3,[4,5,[6,7]],[8,9]]
+                                Array.prototype.myFlat=function(d=1){
+                                    const op=[]
+                                    if(!Array.isArray(this)){
+                                        throw new Error(`${this}.flat is not a function`)
+                                    }
+                                    this.forEach(ele=>{
+                                        if( Array.isArray(ele) && d>0)
+                                        {
+                                            op.push(...ele.myFlat(d-1))
+                                        }
+                                    else{
+                                        op.push(ele)
+                                       
+                                    }
+                                    
+                                })
+                                        return op  
+                                }
+                                console.log("op",ar.myFlat(2))
 
 //POLYFILL FOR POP
 
