@@ -140,11 +140,11 @@ function add(a){
 }
 console.log(add(5)(7)(6)(4)())
 
-//MAP.FILTER POLYFILL
+//MAP,FILTER POLYFILL
 
 const arr=[1,5,8,4]
 //map returns new array
-Array.prototype.myFilter=function(hfn){
+Array.prototype.myPolyfill=function(hfn){
     const res=[]
     for(let i=0;i<this.length;i++){
                             //MAP LOGIC
@@ -154,5 +154,5 @@ Array.prototype.myFilter=function(hfn){
     }
         return res
 }
-const op=arr.myFilter((x)=>x>=5)
+const op=arr.myPolyfill((x)=>x>=5)
 console.log(op)
